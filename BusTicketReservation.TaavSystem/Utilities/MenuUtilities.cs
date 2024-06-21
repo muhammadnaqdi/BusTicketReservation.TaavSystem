@@ -4,7 +4,15 @@ public static class MenuUtilities
 {
     public static void MainMenuPrint()
     {
-        Console.WriteLine("*** Main Menu ***");
+        Console.WriteLine("Main Menu:\n" +
+                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.BusDefine}" +
+                          $"{(int)MainMenuOption.TripDefine}: {MainMenuOption.TripDefine}" +
+                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.TripPreview}" +
+                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.TicketReserve}" +
+                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.TicketPurchase}" +
+                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.TicketCancel}" +
+                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.TripStatics}" +
+                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.Exit}");
     }
 
     public static MainMenuOption MainMenuParseInput(string userInput)
