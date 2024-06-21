@@ -33,32 +33,32 @@ public static class MenuUtilities
         switch (option)
         {
             case MainMenuOption.BusDefine:
-                Console.WriteLine(MainMenuOption.BusDefine);
+                Console.WriteLine(MainMenuOption.BusDefine + Environment.NewLine);
                 break;
             case MainMenuOption.TripDefine:
-                Console.WriteLine(MainMenuOption.TripDefine);
+                Console.WriteLine(MainMenuOption.TripDefine + Environment.NewLine);
                 break;
             case MainMenuOption.TripPreview:
-                Console.WriteLine(MainMenuOption.TripPreview);
+                Console.WriteLine(MainMenuOption.TripPreview + Environment.NewLine);
                 break;
             case MainMenuOption.TicketReserve:
-                Console.WriteLine(MainMenuOption.TicketReserve);
+                Console.WriteLine(MainMenuOption.TicketReserve + Environment.NewLine);
                 break;
             case MainMenuOption.TicketPurchase:
-                Console.WriteLine(MainMenuOption.TicketPurchase);
+                Console.WriteLine(MainMenuOption.TicketPurchase + Environment.NewLine);
                 break;
             case MainMenuOption.TicketCancel:
-                Console.WriteLine(MainMenuOption.TicketCancel);
+                Console.WriteLine(MainMenuOption.TicketCancel + Environment.NewLine);
                 break;
             case MainMenuOption.TripStatics:
-                Console.WriteLine(MainMenuOption.TripStatics);
+                Console.WriteLine(MainMenuOption.TripStatics + Environment.NewLine);
                 break;
             case MainMenuOption.Exit:
                 Console.WriteLine(MainMenuOption.Exit);
                 break;
             case MainMenuOption.Invalid:
             default:
-                Console.WriteLine(MainMenuOption.Invalid);
+                Console.WriteLine(MainMenuOption.Invalid + Environment.NewLine);
                 break;
         }
     }
