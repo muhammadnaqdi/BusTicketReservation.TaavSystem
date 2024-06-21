@@ -15,11 +15,11 @@ public static class MenuUtilities
                           $"{(int)MainMenuOption.Exit}: {MainMenuOption.Exit}\n\n");
     }
 
-    public static MainMenuOption MainMenuParseInput(string userInput)
+    public static MainMenuOption MainMenuParseUserInput(string input)
     {
         int numericOption;
         
-        if (!int.TryParse(userInput, out numericOption))
+        if (!int.TryParse(input, out numericOption))
             return MainMenuOption.Invalid;
         
         if (!Enum.IsDefined(typeof(MainMenuOption), numericOption))
