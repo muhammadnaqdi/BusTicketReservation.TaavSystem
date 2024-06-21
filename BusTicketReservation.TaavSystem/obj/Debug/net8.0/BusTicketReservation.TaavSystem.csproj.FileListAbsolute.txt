@@ -12,3 +12,4 @@
 /home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/BusTicketReservation.TaavSystem.pdb
 /home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/BusTicketReservation.TaavSystem.genruntimeconfig.cache
 /home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/ref/BusTicketReservation.TaavSystem.dll
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/BusTicketReservation.TaavSystem.sourcelink.json

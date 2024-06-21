@@ -4,15 +4,15 @@ public static class MenuUtilities
 {
     public static void MainMenuPrint()
     {
-        Console.WriteLine("Main Menu:\n" +
-                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.BusDefine}" +
-                          $"{(int)MainMenuOption.TripDefine}: {MainMenuOption.TripDefine}" +
-                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.TripPreview}" +
-                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.TicketReserve}" +
-                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.TicketPurchase}" +
-                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.TicketCancel}" +
-                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.TripStatics}" +
-                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.Exit}");
+        Console.Write("Main Menu:\n" +
+                          $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.BusDefine}\n" +
+                          $"{(int)MainMenuOption.TripDefine}: {MainMenuOption.TripDefine}\n" +
+                          $"{(int)MainMenuOption.TripPreview}: {MainMenuOption.TripPreview}\n" +
+                          $"{(int)MainMenuOption.TicketReserve}: {MainMenuOption.TicketReserve}\n" +
+                          $"{(int)MainMenuOption.TicketPurchase}: {MainMenuOption.TicketPurchase}\n" +
+                          $"{(int)MainMenuOption.TicketCancel}: {MainMenuOption.TicketCancel}\n" +
+                          $"{(int)MainMenuOption.TripStatics}: {MainMenuOption.TripStatics}\n" +
+                          $"{(int)MainMenuOption.Exit}: {MainMenuOption.Exit}\n\n");
     }
 
     public static MainMenuOption MainMenuParseInput(string userInput)
