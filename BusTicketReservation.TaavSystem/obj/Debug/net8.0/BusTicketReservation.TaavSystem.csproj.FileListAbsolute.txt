@@ -1,0 +1,14 @@
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/bin/Debug/net8.0/BusTicketReservation.TaavSystem
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/bin/Debug/net8.0/BusTicketReservation.TaavSystem.deps.json
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/bin/Debug/net8.0/BusTicketReservation.TaavSystem.runtimeconfig.json
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/bin/Debug/net8.0/BusTicketReservation.TaavSystem.dll
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/bin/Debug/net8.0/BusTicketReservation.TaavSystem.pdb
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/BusTicketReservation.TaavSystem.GeneratedMSBuildEditorConfig.editorconfig
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/BusTicketReservation.TaavSystem.AssemblyInfoInputs.cache
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/BusTicketReservation.TaavSystem.AssemblyInfo.cs
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/BusTicketReservation.TaavSystem.csproj.CoreCompileInputs.cache
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/BusTicketReservation.TaavSystem.dll
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/refint/BusTicketReservation.TaavSystem.dll
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/BusTicketReservation.TaavSystem.pdb
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/BusTicketReservation.TaavSystem.genruntimeconfig.cache
+/home/naqdimuhammad/RiderProjects/BusTicketReservation.TaavSystem/BusTicketReservation.TaavSystem/obj/Debug/net8.0/ref/BusTicketReservation.TaavSystem.dll

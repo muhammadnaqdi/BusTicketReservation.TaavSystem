@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BusTicketReservation.TaavSystem/1.0.0": {
+        "runtime": {
+          "BusTicketReservation.TaavSystem.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BusTicketReservation.TaavSystem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
