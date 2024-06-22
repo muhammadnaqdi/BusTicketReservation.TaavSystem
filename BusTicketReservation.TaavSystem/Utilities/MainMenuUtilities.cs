@@ -2,7 +2,7 @@ namespace BusTicketReservation.TaavSystem.Utilities;
 
 public static class MainMenuUtilities
 {
-    public static void Print(Action<string> writer)
+    public static void PrintMenu(Action<string> writer)
     {
         writer.Invoke($"""
                        Main Menu:

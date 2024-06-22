@@ -3,7 +3,7 @@
 MainMenuOption option;
 do
 {
-    MainMenuUtilities.Print(Console.WriteLine);
+    MainMenuUtilities.PrintMenu(Console.WriteLine);
     Console.Write("Option: ");
     string userInput = Console.ReadLine()!;
     if (MainMenuUtilities.TryParseUserInput(userInput, out option))

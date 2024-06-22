@@ -3,7 +3,6 @@ namespace BusTicketReservation.TaavSystem;
 public class Bus
 {
     private static int _counter = 1;
-    
     private const int Capacity = 44;
     
     public int Id { get; } = _counter++;
