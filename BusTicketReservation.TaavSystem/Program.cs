@@ -6,7 +6,7 @@ do
     MainMenuUtilities.Print(Console.WriteLine);
     Console.Write("Option: ");
     string userInput = Console.ReadLine()!;
-    if (MainMenuUtilities.ParseUserInput(userInput, out option))
+    if (MainMenuUtilities.TryParseUserInput(userInput, out option))
         MainMenuUtilities.PerformOption(option);
     else
         Console.WriteLine("Invalid input.");

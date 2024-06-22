@@ -18,7 +18,7 @@ public static class MainMenuUtilities
                        """);
     }
 
-    public static bool ParseUserInput(string userInput, out MainMenuOption result)
+    public static bool TryParseUserInput(string userInput, out MainMenuOption result)
     {
         result = MainMenuOption.BusDefine;
         
