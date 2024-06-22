@@ -3,7 +3,7 @@ namespace BusTicketReservation.TaavSystem;
 public class VipBus : IReservable
 {
     private static int counter = 1;
-    private static int capacity = 30;
+    private const int capacity = 30;
     
     public int Id { get; } = counter++;
 
