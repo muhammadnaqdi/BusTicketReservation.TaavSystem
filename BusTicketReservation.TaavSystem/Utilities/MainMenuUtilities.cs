@@ -20,7 +20,7 @@ public static class MainMenuUtilities
 
     public static bool ParseUserInput(string userInput, out MainMenuOption result)
     {
-        result = MainMenuOption.Default;
+        result = MainMenuOption.BusDefine;
         
         if (!int.TryParse(userInput, out int numericOption))
             return false;
@@ -60,10 +60,6 @@ public static class MainMenuUtilities
                 break;
             case MainMenuOption.Exit:
                 Console.WriteLine(MainMenuOption.Exit);
-                break;
-            case MainMenuOption.Default:
-            default:
-                Console.WriteLine(MainMenuOption.Default + Environment.NewLine);
                 break;
         }
     }

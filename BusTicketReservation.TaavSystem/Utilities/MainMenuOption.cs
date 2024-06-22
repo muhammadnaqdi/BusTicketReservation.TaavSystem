@@ -10,5 +10,4 @@ public enum MainMenuOption
     TicketCancel,
     TripStatics,
     Exit,
-    Default
 }
