@@ -3,9 +3,11 @@
 MainMenuOption option;
 do
 {
-    MenuUtilities.MainMenuPrint();
+    MainMenuUtilities.Print(Console.WriteLine);
     Console.Write("Option: ");
     string userInput = Console.ReadLine()!;
-    option = MenuUtilities.MainMenuParseUserInput(userInput);
-    MenuUtilities.MainMenuPerformOption(option);
+    if (MainMenuUtilities.ParseUserInput(userInput, out option))
+        MainMenuUtilities.PerformOption(option);
+    else
+        Console.WriteLine("Invalid input.");
 } while (option != MainMenuOption.Exit);

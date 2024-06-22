@@ -1,34 +1,39 @@
 namespace BusTicketReservation.TaavSystem.Utilities;
 
-public static class MenuUtilities
+public static class MainMenuUtilities
 {
-    public static void MainMenuPrint()
+    public static void Print(Action<string> writer)
     {
-        Console.Write("Main Menu:\n" +
-                      $"{(int)MainMenuOption.BusDefine}: {MainMenuOption.BusDefine}\n" +
-                      $"{(int)MainMenuOption.TripDefine}: {MainMenuOption.TripDefine}\n" +
-                      $"{(int)MainMenuOption.TripPreview}: {MainMenuOption.TripPreview}\n" +
-                      $"{(int)MainMenuOption.TicketReserve}: {MainMenuOption.TicketReserve}\n" +
-                      $"{(int)MainMenuOption.TicketPurchase}: {MainMenuOption.TicketPurchase}\n" +
-                      $"{(int)MainMenuOption.TicketCancel}: {MainMenuOption.TicketCancel}\n" +
-                      $"{(int)MainMenuOption.TripStatics}: {MainMenuOption.TripStatics}\n" +
-                      $"{(int)MainMenuOption.Exit}: {MainMenuOption.Exit}\n\n");
+        writer.Invoke($"""
+                       Main Menu:
+                       {(int)MainMenuOption.BusDefine}: {MainMenuOption.BusDefine}
+                       {(int)MainMenuOption.TripDefine}: {MainMenuOption.TripDefine}
+                       {(int)MainMenuOption.TripPreview}: {MainMenuOption.TripPreview}
+                       {(int)MainMenuOption.TicketReserve}: {MainMenuOption.TicketReserve}
+                       {(int)MainMenuOption.TicketPurchase}: {MainMenuOption.TicketPurchase}
+                       {(int)MainMenuOption.TicketCancel}: {MainMenuOption.TicketCancel}
+                       {(int)MainMenuOption.TripStatics}: {MainMenuOption.TripStatics}
+                       {(int)MainMenuOption.Exit}: {MainMenuOption.Exit}
+
+                       """);
     }
 
-    public static MainMenuOption MainMenuParseUserInput(string input)
+    public static bool ParseUserInput(string userInput, out MainMenuOption result)
     {
-        int numericOption;
+        result = MainMenuOption.Default;
         
-        if (!int.TryParse(input, out numericOption))
-            return MainMenuOption.Invalid;
-        
+        if (!int.TryParse(userInput, out int numericOption))
+            return false;
+
         if (!Enum.IsDefined(typeof(MainMenuOption), numericOption))
-            return MainMenuOption.Invalid;
+            return false;
         
-        return (MainMenuOption)numericOption;
+        result = (MainMenuOption)numericOption;
+        
+        return true;
     }
 
-    public static void MainMenuPerformOption(MainMenuOption option)
+    public static void PerformOption(MainMenuOption option)
     {
         switch (option)
         {
@@ -56,9 +61,9 @@ public static class MenuUtilities
             case MainMenuOption.Exit:
                 Console.WriteLine(MainMenuOption.Exit);
                 break;
-            case MainMenuOption.Invalid:
+            case MainMenuOption.Default:
             default:
-                Console.WriteLine(MainMenuOption.Invalid + Environment.NewLine);
+                Console.WriteLine(MainMenuOption.Default + Environment.NewLine);
                 break;
         }
     }
