@@ -20,11 +20,7 @@ public class Seat
         }
     }
 
-    public SeatStatus SeatStatus
-    {
-        get;
-        set;
-    }
+    public SeatStatus SeatStatus { get; set; }
 
     public Seat(int seatNumber, SeatStatus seatStatus) => (SeatNumber, SeatStatus) = (seatNumber, seatStatus);
 }
