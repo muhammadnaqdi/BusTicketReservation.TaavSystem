@@ -1,8 +1,23 @@
-namespace BusTicketReservation.TaavSystem.Utilities;
+namespace BusTicketReservation.TaavSystem.Menu;
 
-public static class MainMenuUtilities
+public class MainMenu(Action<string> writer, Func<string> reader) : IRunnable
 {
-    public static void PrintMenu(Action<string> writer)
+    public void Start()
+    {
+        MainMenuOption option;
+        do
+        {
+            PrintMenu();
+            writer("Option: ");
+            string userInput = reader.Invoke();
+            if (TryParseUserInput(userInput, out option))
+                PerformOption(option);
+            else
+                writer("Invalid input.\n");
+        } while (option != MainMenuOption.Exit);
+    }
+
+    private void PrintMenu()
     {
         writer.Invoke($"""
                        Main Menu:
@@ -15,10 +30,11 @@ public static class MainMenuUtilities
                        {(int)MainMenuOption.TripStatics}: {MainMenuOption.TripStatics}
                        {(int)MainMenuOption.Exit}: {MainMenuOption.Exit}
 
+                       
                        """);
     }
 
-    public static bool TryParseUserInput(string userInput, out MainMenuOption result)
+    private bool TryParseUserInput(string userInput, out MainMenuOption result)
     {
         result = MainMenuOption.BusDefine;
         
@@ -33,7 +49,7 @@ public static class MainMenuUtilities
         return true;
     }
 
-    public static void PerformOption(MainMenuOption option)
+    private void PerformOption(MainMenuOption option)
     {
         switch (option)
         {

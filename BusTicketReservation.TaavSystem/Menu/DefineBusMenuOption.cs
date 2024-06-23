@@ -1,4 +1,4 @@
-namespace BusTicketReservation.TaavSystem.Utilities;
+namespace BusTicketReservation.TaavSystem.Menu;
 
 public enum DefineBusMenuOption
 {
