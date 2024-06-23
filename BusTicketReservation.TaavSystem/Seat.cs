@@ -2,20 +2,17 @@ namespace BusTicketReservation.TaavSystem;
 
 public class Seat
 {
-    private int seatNumber;
+    private int _seatNumber;
     
     public int SeatNumber
     {
-        get
-        {
-            return seatNumber;
-        }
-        
+        get => _seatNumber;
+
         set
         {
             if (value > 0)
             {
-                seatNumber = value;
+                _seatNumber = value;
             }
         }
     }
