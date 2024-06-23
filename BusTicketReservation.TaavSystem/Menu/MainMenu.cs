@@ -10,17 +10,18 @@ public class MainMenu(Action<string> writer, Func<string> reader) : IRunnable
             PrintMenu();
             writer("Option: ");
             string userInput = reader.Invoke();
+            writer(Environment.NewLine);
             if (TryParseUserInput(userInput, out option))
                 PerformOption(option);
             else
-                writer("Invalid input.\n");
+                writer("Invalid input." + Environment.NewLine);
         } while (option != MainMenuOption.Exit);
     }
 
     private void PrintMenu()
     {
         writer.Invoke($"""
-                       Main Menu:
+                       *** Main Menu ***
                        {(int)MainMenuOption.BusDefine}: {MainMenuOption.BusDefine}
                        {(int)MainMenuOption.TripDefine}: {MainMenuOption.TripDefine}
                        {(int)MainMenuOption.TripPreview}: {MainMenuOption.TripPreview}
@@ -54,7 +55,8 @@ public class MainMenu(Action<string> writer, Func<string> reader) : IRunnable
         switch (option)
         {
             case MainMenuOption.BusDefine:
-                Console.WriteLine(MainMenuOption.BusDefine + Environment.NewLine);
+                IRunnable busDefineMenu = new BusDefineMenu(writer, reader);
+                busDefineMenu.Start();
                 break;
             case MainMenuOption.TripDefine:
                 Console.WriteLine(MainMenuOption.TripDefine + Environment.NewLine);
